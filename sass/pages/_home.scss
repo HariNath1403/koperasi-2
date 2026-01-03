@@ -1,0 +1,229 @@
+.home {
+  &__background {
+    position: relative;
+    background-image: radial-gradient(
+        circle,
+        rgba($color-black, 0.15) 0%,
+        rgba($color-black, 0.35) 100%
+      ),
+      url("../imgs/background/home.webp");
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 52.5rem;
+    @include flex-col;
+    gap: $space-md;
+    overflow: hidden;
+
+    @include respond(phone) {
+      height: 60rem;
+    }
+
+    &--gradient {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(
+        circle,
+        rgba($color-black, 0.5) 0%,
+        rgba($color-black, 1) 100%
+      );
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    &--header {
+      text-align: center;
+      padding: 0 $space-md $space-xl;
+      color: $color-background;
+      line-height: 1.6;
+      transform: translateY(-20%);
+      text-transform: uppercase;
+
+      &--main {
+        font-size: calc(#{$font-2xl + $font-3xl}/ 2);
+        font-weight: 700;
+        letter-spacing: 5px;
+
+        @include respond(phone) {
+          font-size: calc(#{$font-lg + $font-md}/ 2);
+          font-weight: 500;
+          letter-spacing: 3px;
+        }
+      }
+
+      &--sub {
+        font-size: $font-lg;
+        font-weight: 400;
+        margin-top: $space-xl;
+        letter-spacing: 10px;
+
+        @include respond(phone) {
+          font-size: $font-sm;
+          margin-top: $space-md;
+          letter-spacing: 7.5px;
+        }
+      }
+    }
+
+    &--more {
+      display: inline-flex;
+      gap: $space-xs;
+      color: $color-main;
+      background-color: $color-background;
+      padding: $space-sm $space-lg;
+      border-radius: 3px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 400;
+      transform: scale(1);
+      z-index: 2;
+
+      @include respond(phone) {
+        padding: $space-xs $space-md;
+        font-size: $font-base;
+      }
+
+      &--hide {
+        opacity: 0;
+        transition: all 0.3s ease;
+
+        @include respond(phone) {
+          opacity: 1;
+        }
+      }
+
+      &:hover {
+        background-color: $color-white;
+        // font-weight: 700;
+        transform: scale(1.05);
+      }
+    }
+
+    &--header,
+    &--more {
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__nav {
+    background-color: $color-background;
+    height: $space-6xl;
+    padding: $space-md $space-5xl;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @include respond(phone) {
+      height: $space-4xl;
+      padding: $space-xs $space-2xl;
+    }
+
+    &--logo {
+      width: 8.5rem;
+      height: auto;
+      margin-left: $space-md;
+
+      @include respond(phone) {
+        width: 6rem;
+        margin-left: $space-xs;
+      }
+    }
+
+    &--list {
+      @include flex-row;
+      gap: $space-lg;
+      margin-right: $space-md;
+
+      @include respond(phone) {
+        @include flex-col;
+        display: none;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: $space-xxs;
+        margin-right: 0;
+        background-color: $color-background;
+        font-size: $font-sm;
+        z-index: 2;
+        position: absolute;
+        top: 5rem;
+        right: 0;
+      }
+
+      &--no {
+        color: $color-text;
+        padding: $space-xs $space-sm;
+        font-weight: 400;
+        border-bottom: 2px solid transparent;
+        transition: all 0.3s;
+
+        &:hover {
+          color: $color-accent;
+          border-bottom: 2px solid $color-accent;
+        }
+      }
+
+      &--link {
+        text-decoration: none;
+      }
+    }
+
+    &--menu {
+      font-size: $font-3xl;
+      color: $color-text;
+      display: none;
+
+      @include respond(phone) {
+        display: block;
+      }
+    }
+  }
+
+  &__more {
+    margin: $space-3xl 0;
+    padding: $space-lg $space-md;
+
+    @include respond(phone) {
+      padding: $space-lg;
+    }
+
+    &--box {
+      @include flex-row;
+
+      @include respond(phone) {
+        @include flex-col;
+        gap: $space-xxs;
+      }
+
+      &--part {
+        @include box-shadow;
+        background-color: $color-main;
+        color: $color-background;
+        padding: $space-md $space-xl;
+        width: 42.5rem;
+        @include flex-col;
+        gap: $space-md;
+
+        &--alt {
+          background-color: $color-accent;
+        }
+      }
+
+      &--main {
+        font-size: $font-3xl;
+        font-weight: 300;
+      }
+
+      &--desc {
+        font-size: $font-md;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.home__background--more:hover {
+  .home__background--more--hide {
+    opacity: 1;
+  }
+}

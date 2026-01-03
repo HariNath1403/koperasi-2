@@ -1,0 +1,79 @@
+.service {
+  padding: $space-4xl $space-5xl;
+  background-color: $color-accent;
+  background-color: $color-lite;
+
+  @include flex-col;
+  gap: $space-lg;
+  align-items: flex-start;
+
+  @include respond(phone) {
+    padding: $space-4xl $space-xl;
+  }
+
+  &__header {
+    @include header-main;
+    color: $color-text;
+
+    &::after {
+      background-color: $color-background;
+      width: 15%;
+    }
+  }
+
+  &__box {
+    align-self: center;
+    padding: $space-lg;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: $space-8xl;
+    row-gap: $space-xl;
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
+
+    &--row {
+      @include flex-row;
+      gap: $space-xl;
+      width: 35rem;
+
+      &--icon {
+        font-size: $font-5xl;
+        --ionicon-stroke-width: 16px;
+        --ionicon-stroke-width: 32px;
+        color: $color-background;
+        transform: scale(1.15);
+      }
+
+      &--txt {
+        @include flex-col;
+        gap: $space-xs;
+        align-items: flex-start;
+
+        &--main {
+          font-size: $font-md;
+          font-weight: 500;
+          // text-transform: uppercase;
+        }
+
+        &--desc {
+          font-size: calc(#{$font-sm + $font-xs}/ 2);
+          line-height: 1.4;
+          text-align: justify;
+          color: $color-background;
+        }
+      }
+    }
+  }
+}
+
+.service__box--row {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.service__box--row.visible {
+  opacity: 1;
+  transform: translateX(0);
+}

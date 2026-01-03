@@ -1,0 +1,78 @@
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-col {
+  @include flex-row;
+  flex-direction: column;
+}
+
+@mixin box-shadow {
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.375);
+}
+
+@mixin header-main {
+  font-size: $font-3xl;
+  font-weight: 800;
+  text-transform: capitalize;
+  color: $color-main;
+  position: relative;
+  padding-bottom: $space-md;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 25%;
+    height: 0.55rem;
+    background-color: $color-accent;
+  }
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+body {
+  position: relative;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: $space-xl;
+  right: $space-lg;
+
+  &__btn {
+    padding: $space-md;
+    border-radius: 50%;
+    @include box-shadow;
+    background-color: rgba($color-accent, 0.75);
+
+    @include flex-row;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: rgba($color-accent, 1);
+    }
+
+    &--icon {
+      font-size: $font-2xl;
+      color: $color-background;
+    }
+  }
+}
+
+.container {
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section-hide {
+  opacity: 0;
+  transform: translateY(10rem);
+}

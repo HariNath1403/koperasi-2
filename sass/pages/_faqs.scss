@@ -1,0 +1,136 @@
+.faqs {
+  padding: $space-5xl $space-2xl;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: $space-xl;
+  background-color: $color-white;
+
+  @include respond(phone) {
+    padding: $space-5xl $space-md;
+    grid-template-columns: 1fr;
+  }
+
+  &__title {
+    @include flex-col;
+    justify-content: flex-start;
+    gap: $space-lg;
+
+    &--main {
+      @include header-main;
+      // font-size: calc(#{$font-2xl + $font-3xl}/ 2);
+    }
+
+    &--desc {
+      font-size: $font-base;
+      line-height: 1.8;
+      text-align: left;
+      color: $color-main;
+
+      @include respond(phone) {
+        font-size: $font-sm;
+        line-height: 1.6;
+      }
+    }
+
+    &--contact {
+      @include flex-row;
+      gap: $space-sm;
+      align-self: flex-start;
+
+      text-decoration: none;
+      color: $color-main;
+      background-color: $color-background;
+      background-color: $color-white;
+      border: 2px solid $color-main;
+      padding: $space-sm $space-md;
+      transition: all 0.3s ease;
+
+      @include respond(phone) {
+        display: none;
+      }
+
+      &:hover {
+        color: $color-background;
+        background-color: $color-accent;
+        border: 2px solid $color-accent;
+      }
+
+      &--logo {
+        transform: scale(1.25);
+      }
+    }
+  }
+
+  &__accordion {
+    margin: $space-xl $space-lg;
+
+    @include respond(phone) {
+      margin: $space-lg $space-md;
+    }
+
+    &--list {
+      @include flex-col;
+      gap: $space-lg;
+      justify-content: flex-start;
+    }
+
+    &--no {
+      @include flex-col;
+      justify-content: flex-start;
+      gap: $space-lg;
+      width: 100%;
+      padding: $space-md;
+      background-color: $color-accent;
+      color: $color-white;
+
+      &--hide {
+        background-color: $color-white;
+        background-color: $color-background;
+        color: $color-main;
+      }
+
+      &--row {
+        position: relative;
+        width: 100%;
+      }
+
+      &--question {
+        margin-right: $space-xl;
+        font-size: $font-md;
+        font-weight: 600;
+
+        @include respond(phone) {
+          font-size: $font-base;
+        }
+      }
+
+      &--btn {
+        position: absolute;
+        top: 0;
+        right: $space-xs;
+        border: 0;
+        padding: $space-xs $space-sm;
+        background-color: inherit;
+        transform: scale(1.5);
+
+        &--icon {
+          color: inherit;
+
+          &--hide {
+            display: none;
+          }
+        }
+      }
+
+      &--ans {
+        font-size: $font-sm;
+        font-weight: 300;
+        line-height: 1.6;
+
+        &--hide {
+          display: none;
+        }
+      }
+    }
+  }
+}

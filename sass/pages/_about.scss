@@ -1,0 +1,80 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: $space-xl;
+  background-color: $color-background;
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    gap: $space-md;
+    padding: $space-2xl 0;
+  }
+
+  &__background {
+    width: 100%;
+    height: 65rem;
+    overflow: hidden;
+    position: relative;
+
+    @include flex-col;
+    // transform: translateY(25%);
+
+    @include respond(phone) {
+      height: 45rem;
+    }
+
+    &--img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 125%;
+      object-fit: cover;
+      object-position: top;
+      will-change: transform;
+    }
+  }
+
+  &__desc {
+    @include flex-col;
+    align-items: flex-start;
+    gap: $space-xl;
+    width: 100%;
+    padding: 0 $space-3xl 0 $space-xl;
+
+    &--header {
+      @include header-main;
+    }
+
+    &--txt {
+      font-size: $font-sm;
+      font-weight: 300;
+      text-align: justify;
+      line-height: 2;
+
+      @include respond(phone) {
+        line-height: 1.6;
+      }
+    }
+
+    &--link {
+      text-decoration: none;
+      color: $color-main;
+      background-color: $color-background;
+      border: 2px solid $color-main;
+      padding: $space-sm $space-md;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $color-background;
+        background-color: $color-accent;
+        border: 2px solid $color-accent;
+      }
+
+      @include respond(phone) {
+        font-size: $font-sm;
+        padding: $space-xs $space-sm;
+      }
+    }
+  }
+}

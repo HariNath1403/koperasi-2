@@ -1,0 +1,57 @@
+// Colors
+$color-main: #0b2b40;
+$color-accent: #3b8c6e;
+$color-lite: #97a6a0;
+$color-background: #f2e7dc;
+$color-text: #2c3532;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-error: #d62828;
+
+// Font-Sizes
+$font-3xs: 0.4rem;
+$font-2xs: 0.6rem;
+$font-xxs: 0.8rem;
+$font-xs: 1.2rem;
+$font-sm: 1.4rem;
+$font-base: 1.6rem;
+$font-md: 1.8rem;
+$font-lg: 2rem;
+$font-xl: 2.4rem;
+$font-2xl: 3rem;
+$font-3xl: 4.2rem;
+$font-4xl: 5.6rem;
+$font-5xl: 7.2rem;
+$font-6xl: 9rem;
+$font-7xl: 12rem;
+$font-8xl: 16rem;
+
+// Whitespace
+$space-3xs: 0.2rem;
+$space-2xs: 0.3rem;
+$space-xxs: 0.4rem;
+$space-xs: 0.8rem;
+$space-sm: 1.2rem;
+$space-md: 1.6rem;
+$space-lg: 2.4rem;
+$space-xl: 3.2rem;
+$space-2xl: 4rem;
+$space-3xl: 5.6rem;
+$space-4xl: 7.2rem;
+$space-5xl: 8.4rem;
+$space-6xl: 10rem;
+$space-7xl: 12rem;
+$space-8xl: 16rem;
+$space-9xl: 20rem;
+
+// Available Font Weights
+// 300, 400 & 700
+
+// Media Queries
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content; //600px
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.vision {
+  background-color: $color-text;
+  color: $color-background;
+  padding: $space-lg $space-xl;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: $space-md;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    padding: $space-2xl $space-md;
+  }
+
+  &__details {
+    padding: 0 $space-lg 0 $space-3xl;
+
+    &--header {
+      @include header-main;
+      color: $color-background;
+
+      &::after {
+        // background-color: $color-background;
+        width: 15%;
+      }
+    }
+
+    &--list {
+      margin-top: $space-3xl;
+      @include flex-col;
+      align-items: flex-start;
+      gap: $space-xl;
+    }
+
+    &--no {
+      @include flex-col;
+      gap: $space-sm;
+      align-items: flex-start;
+      list-style: none;
+
+      &--main {
+        font-weight: 900;
+        font-size: $font-base;
+        margin-left: $space-xs;
+
+        @include flex-row;
+        gap: $space-xl;
+
+        span {
+          &:first-child {
+            color: $color-accent;
+          }
+        }
+      }
+
+      &--desc {
+        font-weight: 300;
+        font-size: $font-sm;
+        margin-left: $space-3xl;
+      }
+
+      &--list {
+        list-style: decimal;
+        margin-left: $space-4xl;
+        @include flex-col;
+        align-items: flex-start;
+        gap: $space-xs;
+
+        &--line {
+          font-weight: 300;
+          font-size: $font-sm;
+        }
+      }
+    }
+  }
+
+  &__background {
+    width: 100%;
+    padding: 0 $space-xl;
+
+    &--img {
+      width: 100%;
+      transform: translateX(-10%) translateY(15%);
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+  }
+}

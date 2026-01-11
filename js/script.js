@@ -196,3 +196,41 @@ navMenu.addEventListener("click", () => {
     listMenu.style.flexDirection = "column";
   }
 });
+
+// Login Form
+const sectionMain = document.getElementById("main");
+const sectionLogin = document.getElementById("login");
+const loginForm = document.querySelector(".login__form");
+
+const loginBtnSend = document.querySelector(".login__form--cmd--btn--send");
+const loginBtnClear = document.querySelector(".login__form--cmd--btn--clear");
+const loginInputId = document.getElementById("user-id");
+const loginInputPw = document.getElementById("user-pw");
+
+const userId = "KSGEC";
+const userPw = "211";
+
+const successfulLogin = function () {
+  if (loginInputId.value === userId && loginInputPw.value === userPw) {
+    sectionLogin.style.display = "none";
+    sectionMain.style.display = "block";
+  } else {
+    alert("Incorrect Id / Password");
+  }
+};
+
+loginForm.addEventListener("submit", (e) => {
+  e.preventDefault(); // stop page reload
+  successfulLogin();
+});
+
+loginBtnSend.addEventListener("submit", (e) => {
+  e.preventDefault();
+  successfulLogin();
+});
+
+loginBtnClear.addEventListener("click", (e) => {
+  e.preventDefault();
+  loginInputId.value = "";
+  loginInputPw.value = "";
+});

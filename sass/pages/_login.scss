@@ -1,0 +1,130 @@
+#main {
+  display: none;
+}
+
+.login {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+
+  &__background {
+    height: 100vh;
+    background-image: radial-gradient(
+        circle,
+        rgba($color-black, 0.25) 0%,
+        rgba($color-black, 0.95) 100%
+      ),
+      url("../imgs/background/home.webp");
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    height: 60%;
+    width: 45%;
+    background-color: rgba($color-background, 0.75);
+    color: $color-main;
+    padding: $space-3xl $space-xl;
+    z-index: 2;
+
+    @include respond(phone) {
+      height: 45%;
+      width: 85%;
+      padding: $space-md;
+    }
+
+    &--header {
+      @include header-main;
+      color: $color-text;
+      font-size: $font-lg;
+      font-weight: 500;
+      line-height: 1.6;
+
+      &::after {
+        width: 25%;
+        background-color: $color-text;
+      }
+
+      @include respond(phone) {
+        font-size: $font-base;
+      }
+    }
+
+    &--details {
+      margin-top: $space-lg;
+      @include flex-col;
+      gap: $space-lg;
+    }
+
+    &--row {
+      @include flex-row;
+      gap: $space-lg;
+
+      &--label {
+        color: $color-text;
+        font-size: $font-base;
+        font-weight: 400;
+        width: 15rem;
+
+        @include respond(phone) {
+          font-size: $font-sm;
+          width: 10rem;
+        }
+      }
+
+      &--input {
+        font-size: $font-sm;
+        font-weight: 400;
+        width: 20rem;
+        padding: $space-xxs $space-xs;
+        background-color: $color-text;
+        color: $color-background;
+        font-family: inherit;
+
+        @include respond(phone) {
+          font-size: $font-sm;
+          width: 15rem;
+        }
+      }
+    }
+
+    &--cmd {
+      margin-top: $space-2xl;
+      @include flex-row;
+      gap: $space-2xl;
+
+      &--btn {
+        width: 20rem;
+        padding: $space-xs $space-sm;
+        border-radius: 9px;
+        border: none;
+        background-color: $color-background;
+        color: $color-main;
+        font-size: $font-base;
+        font-weight: 400;
+        @include box-shadow;
+
+        @include respond(phone) {
+          font-size: $font-sm;
+          width: 15rem;
+        }
+
+        &--clear {
+          color: $color-background;
+          background-color: $color-error;
+        }
+
+        &--send {
+          color: $color-background;
+          background-color: $color-text;
+        }
+      }
+    }
+  }
+}

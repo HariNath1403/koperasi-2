@@ -779,7 +779,8 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 4rem; }
+    gap: 4rem;
+    align-items: flex-start; }
     @media (max-width: 37.5em) {
       .footer__list {
         flex-direction: column;
@@ -806,10 +807,138 @@ body {
         font-size: 1.4rem;
         font-weight: 300;
         text-align: center;
-        line-height: 1.8; }
+        line-height: 1.8;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+        .footer__list--detail--answer--link {
+          color: #f2e7dc;
+          transition: all 0.3s; }
+          .footer__list--detail--answer--link:hover {
+            color: #ffffff; }
       .footer__list--detail--list {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 1.6rem; }
+
+#main {
+  display: none; }
+
+.login {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative; }
+  .login__background {
+    height: 100vh;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.95) 100%), url("../imgs/background/home.webp");
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .login__form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    height: 60%;
+    width: 45%;
+    background-color: rgba(242, 231, 220, 0.75);
+    color: #0b2b40;
+    padding: 5.6rem 3.2rem;
+    z-index: 2; }
+    @media (max-width: 37.5em) {
+      .login__form {
+        height: 45%;
+        width: 85%;
+        padding: 1.6rem; } }
+    .login__form--header {
+      font-size: 4.2rem;
+      font-weight: 800;
+      text-transform: capitalize;
+      color: #0b2b40;
+      position: relative;
+      padding-bottom: 1.6rem;
+      color: #2c3532;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.6; }
+      .login__form--header::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 25%;
+        height: 0.55rem;
+        background-color: #3b8c6e; }
+      .login__form--header::after {
+        width: 25%;
+        background-color: #2c3532; }
+      @media (max-width: 37.5em) {
+        .login__form--header {
+          font-size: 1.6rem; } }
+    .login__form--details {
+      margin-top: 2.4rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2.4rem; }
+    .login__form--row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 2.4rem; }
+      .login__form--row--label {
+        color: #2c3532;
+        font-size: 1.6rem;
+        font-weight: 400;
+        width: 15rem; }
+        @media (max-width: 37.5em) {
+          .login__form--row--label {
+            font-size: 1.4rem;
+            width: 10rem; } }
+      .login__form--row--input {
+        font-size: 1.4rem;
+        font-weight: 400;
+        width: 20rem;
+        padding: 0.4rem 0.8rem;
+        background-color: #2c3532;
+        color: #f2e7dc;
+        font-family: inherit; }
+        @media (max-width: 37.5em) {
+          .login__form--row--input {
+            font-size: 1.4rem;
+            width: 15rem; } }
+    .login__form--cmd {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem; }
+      .login__form--cmd--btn {
+        width: 20rem;
+        padding: 0.8rem 1.2rem;
+        border-radius: 9px;
+        border: none;
+        background-color: #f2e7dc;
+        color: #0b2b40;
+        font-size: 1.6rem;
+        font-weight: 400;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.375); }
+        @media (max-width: 37.5em) {
+          .login__form--cmd--btn {
+            font-size: 1.4rem;
+            width: 15rem; } }
+        .login__form--cmd--btn--clear {
+          color: #f2e7dc;
+          background-color: #d62828; }
+        .login__form--cmd--btn--send {
+          color: #f2e7dc;
+          background-color: #2c3532; }

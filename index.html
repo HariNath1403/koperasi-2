@@ -16,117 +16,152 @@
     <title>KSGEC</title>
   </head>
   <body>
-    <div class="container home" id="home">
-      <nav class="home__nav">
-        <img src="imgs/logo.png" alt="Logo" class="home__nav--logo" />
-        <ul class="home__nav--list">
-          <li class="home__nav--list--no">
-            <a href="#about" class="home__nav--list--link">Tentang Kami</a>
+    <section class="container login" id="login">
+      <div class="login__background"></div>
+      <form action="#" class="login__form">
+        <h2 class="login__form--header">
+          Koperasi Kakitangan Kerajaan Daerah Kuala Selangor Berhad (KSGEC 211)
+        </h2>
+        <ul class="login__form--details">
+          <li class="login__form--row">
+            <label for="user-id" class="login__form--row--label"
+              >Id Pengguna</label
+            >
+            <input type="text" id="user-id" class="login__form--row--input" />
           </li>
-          <li class="home__nav--list--no">
-            <a href="#vision" class="home__nav--list--link">Misi & Visi</a>
-          </li>
-          <li class="home__nav--list--no">
-            <a href="#service" class="home__nav--list--link">Perkhidmatan</a>
-          </li>
-          <li class="home__nav--list--no">
-            <a href="#gallery" class="home__nav--list--link">Galeri</a>
-          </li>
-          <li class="home__nav--list--no">
-            <a href="#faqs" class="home__nav--list--link">Hubungi Kami</a>
+          <li class="login__form--row">
+            <label for="user-pw" class="login__form--row--label"
+              >Kata Laluan</label
+            >
+            <input
+              type="password"
+              id="user-pw"
+              class="login__form--row--input"
+            />
           </li>
         </ul>
-        <div class="home__nav--menu">
-          <ion-icon
-            name="menu-outline"
-            class="home__nav--menu--icon"
-          ></ion-icon>
-        </div>
-      </nav>
-      <div class="home__background">
-        <div class="home__background--gradient"></div>
-        <div class="home__background--header">
-          <h1 class="home__background--header--main">
-            Koperasi Kakitangan Kerajaan Daerah Kuala Selangor Berhad (KSGEC
-            211)
-          </h1>
-          <h2 class="home__background--header--sub">
-            Koperasi Merakyatkan Ekonomi Negara
-          </h2>
-        </div>
-        <a href="#about" class="home__background--more">
-          <span class="home__background--more--show">Tentang Kami</span>
-          <span class="home__background--more--hide">&#10140;</span>
-        </a>
-      </div>
-      <div class="home__more">
-        <div class="home__more--box">
-          <div class="home__more--box--part">
-            <h2 class="home__more--box--main">30%</h2>
-            <h4 class="home__more--box--desc">Selasai hutang isi rumah</h4>
+        <ul class="login__form--cmd">
+          <button class="login__form--cmd--btn login__form--cmd--btn--clear">
+            Padam
+          </button>
+          <button class="login__form--cmd--btn login__form--cmd--btn--send">
+            Log Masuk
+          </button>
+        </ul>
+      </form>
+    </section>
+    <main id="main">
+      <div class="container home" id="home">
+        <nav class="home__nav">
+          <img src="imgs/logo.png" alt="Logo" class="home__nav--logo" />
+          <ul class="home__nav--list">
+            <li class="home__nav--list--no">
+              <a href="#about" class="home__nav--list--link">Tentang Kami</a>
+            </li>
+            <li class="home__nav--list--no">
+              <a href="#vision" class="home__nav--list--link">Misi & Visi</a>
+            </li>
+            <li class="home__nav--list--no">
+              <a href="#service" class="home__nav--list--link">Perkhidmatan</a>
+            </li>
+            <li class="home__nav--list--no">
+              <a href="#gallery" class="home__nav--list--link">Galeri</a>
+            </li>
+            <li class="home__nav--list--no">
+              <a href="#faqs" class="home__nav--list--link">Hubungi Kami</a>
+            </li>
+          </ul>
+          <div class="home__nav--menu">
+            <ion-icon
+              name="menu-outline"
+              class="home__nav--menu--icon"
+            ></ion-icon>
           </div>
-          <div class="home__more--box--part home__more--box--part--alt">
-            <h2 class="home__more--box--main">2030</h2>
-            <h4 class="home__more--box--desc">Sasaran Penyelasaian 30B</h4>
+        </nav>
+        <div class="home__background">
+          <div class="home__background--gradient"></div>
+          <div class="home__background--header">
+            <h1 class="home__background--header--main">
+              Koperasi Kakitangan Kerajaan Daerah Kuala Selangor Berhad (KSGEC
+              211)
+            </h1>
+            <h2 class="home__background--header--sub">
+              Koperasi Merakyatkan Ekonomi Negara
+            </h2>
+          </div>
+          <a href="#about" class="home__background--more">
+            <span class="home__background--more--show">Tentang Kami</span>
+            <span class="home__background--more--hide">&#10140;</span>
+          </a>
+        </div>
+        <div class="home__more">
+          <div class="home__more--box">
+            <div class="home__more--box--part">
+              <h2 class="home__more--box--main">30%</h2>
+              <h4 class="home__more--box--desc">Selasai hutang isi rumah</h4>
+            </div>
+            <div class="home__more--box--part home__more--box--part--alt">
+              <h2 class="home__more--box--main">2030</h2>
+              <h4 class="home__more--box--desc">Sasaran Penyelasaian 30B</h4>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container section-hide about" id="about">
-      <div class="about__background">
-        <img
-          src="imgs/background/about.jpeg"
-          alt="KL Background"
-          class="about__background--img"
-        />
+      <div class="container section-hide about" id="about">
+        <div class="about__background">
+          <img
+            src="imgs/background/about.jpeg"
+            alt="KL Background"
+            class="about__background--img"
+          />
+        </div>
+        <div class="about__desc">
+          <h1 class="about__desc--header">Tentang Kami</h1>
+          <p class="about__desc--txt">
+            Koperasi Kakitangan Kerajaan Daerah Kuala Selangor Berhad (KSGEC)
+            ialah antara koperasi tertua di tanah air, ditubuhkan secara rasmi
+            pada 7 Mei 1932 ketika negara masih berada di bawah naungan
+            pentadbiran British. Kewujudannya merupakan manifestasi kesedaran
+            awal penjawat awam untuk melindungi maruah serta kebajikan ekonomi
+            mereka melalui sistem sokongan berasaskan semangat gotong-royong,
+            kepercayaan, dan nilai integriti.
+          </p>
+          <p class="about__desc--txt">
+            Sejak sebelum kemerdekaan, KSGEC telah memainkan peranan penting
+            sebagai badan sokongan kewangan dan sosial kepada penjawat awam. Ia
+            wujud sebagai reaksi terhadap tekanan sistem kewangan yang tidak
+            mesra serta pinjaman yang menindas termasuk aktiviti pemberi pinjam
+            wang tidak berlesen. Koperasi ini menjadi pelindung maruah dan
+            kehormatan penjawat awam.
+          </p>
+          <a href="imgs/blueprint.pdf" target="_blank" class="about__desc--link"
+            >&#9661; Muat turun blueprint</a
+          >
+        </div>
       </div>
-      <div class="about__desc">
-        <h1 class="about__desc--header">Tentang Kami</h1>
-        <p class="about__desc--txt">
-          Koperasi Kakitangan Kerajaan Daerah Kuala Selangor Berhad (KSGEC)
-          ialah antara koperasi tertua di tanah air, ditubuhkan secara rasmi
-          pada 7 Mei 1932 ketika negara masih berada di bawah naungan
-          pentadbiran British. Kewujudannya merupakan manifestasi kesedaran awal
-          penjawat awam untuk melindungi maruah serta kebajikan ekonomi mereka
-          melalui sistem sokongan berasaskan semangat gotong-royong,
-          kepercayaan, dan nilai integriti.
-        </p>
-        <p class="about__desc--txt">
-          Sejak sebelum kemerdekaan, KSGEC telah memainkan peranan penting
-          sebagai badan sokongan kewangan dan sosial kepada penjawat awam. Ia
-          wujud sebagai reaksi terhadap tekanan sistem kewangan yang tidak mesra
-          serta pinjaman yang menindas termasuk aktiviti pemberi pinjam wang
-          tidak berlesen. Koperasi ini menjadi pelindung maruah dan kehormatan
-          penjawat awam.
-        </p>
-        <a href="imgs/blueprint.pdf" class="about__desc--link"
-          >&#9661; Muat turun blueprint</a
-        >
-      </div>
-    </div>
-    <div class="container section-hide vision" id="vision">
-      <div class="vision__details">
-        <h1 class="vision__details--header">Misi & Visi</h1>
-        <ul class="vision__details--list">
-          <li class="vision__details--no">
-            <h3 class="vision__details--no--main">
-              <span>&#9654;</span>
-              <span>Visi</span>
-            </h3>
-            <h3 class="vision__details--no--desc">
-              Memartabatkan kebajikan &bull; Pembiayaan inovatif &bull;
-              Menjelang 7 Mei 2032
-            </h3>
-          </li>
-          <li class="vision__details--no">
-            <h3 class="vision__details--no--main">
-              <span>&#9654;</span>
-              <span>Misi</span>
-            </h3>
-            <h3 class="vision__details--no--desc">
-              Kerjasama dua hala (G2G) &bull; Pengecualian cukai dalaman 10%
-            </h3>
-            <!-- <ol class="vision__details--no--list">
+      <div class="container section-hide vision" id="vision">
+        <div class="vision__details">
+          <h1 class="vision__details--header">Misi & Visi</h1>
+          <ul class="vision__details--list">
+            <li class="vision__details--no">
+              <h3 class="vision__details--no--main">
+                <span>&#9654;</span>
+                <span>Visi</span>
+              </h3>
+              <h3 class="vision__details--no--desc">
+                Memartabatkan kebajikan &bull; Pembiayaan inovatif &bull;
+                Menjelang 7 Mei 2032
+              </h3>
+            </li>
+            <li class="vision__details--no">
+              <h3 class="vision__details--no--main">
+                <span>&#9654;</span>
+                <span>Misi</span>
+              </h3>
+              <h3 class="vision__details--no--desc">
+                Kerjasama dua hala (G2G) &bull; Pengecualian cukai dalaman 10%
+              </h3>
+              <!-- <ol class="vision__details--no--list">
               <li class="vision__details--no--list--line">
                 Menjalinkan kerjasama dua hala (G2G) dengan organisasi serantau
                 dan antarabangsa.
@@ -139,333 +174,406 @@
                 Menyusun tadbir urus yang telus bersama BNM dan KWSP.
               </li>
             </ol> -->
-          </li>
-          <li class="vision__details--no">
-            <h3 class="vision__details--no--main">
-              <span>&#9654;</span>
-              <span>Objektif Utama</span>
-            </h3>
-            <ol class="vision__details--no--list">
-              <li class="vision__details--no--list--line">
-                Memperkukuh pergerakan koperasi melalui penggubalan akta baharu.
-              </li>
-              <li class="vision__details--no--list--line">
-                Meliberalisasikan peraturan serta memperkasa peranan SKM.
-              </li>
-              <li class="vision__details--no--list--line">
-                Mewujudkan koperasi yang lebih responsif, dinamik dan berdaya
-                saing.
-              </li>
-              <li class="vision__details--no--list--line">
-                Memudahkan urusan perniagaan serta meningkatkan tadbir urus.
-              </li>
-            </ol>
-          </li>
-          <li class="vision__details--no">
-            <h3 class="vision__details--no--main">
-              <span>&#9654;</span>
-              <span>Modus Operandi</span>
-            </h3>
-            <h3 class="vision__details--no--desc">
-              Kontrak kerajaan - tender / runding &bull; Saham model (simpanan
-              persaraan bebas hutang)
-            </h3>
-          </li>
-        </ul>
-      </div>
-      <div class="vision__background">
-        <img
-          src="imgs/background/vision.jpeg"
-          alt="Team"
-          class="vision__background--img"
-        />
-      </div>
-    </div>
-    <div class="container service" id="service">
-      <h1 class="service__header">Perkhidmatan Kami</h1>
-      <div class="service__box">
-        <div class="service__box--row">
-          <ion-icon
-            name="wallet-outline"
-            class="service__box--row--icon"
-          ></ion-icon>
-          <div class="service__box--row--txt">
-            <h3 class="service__box--row--txt--main">Pembiayaan</h3>
-            <p class="service__box--row--txt--desc">
-              Menyediakan kemudahan pembiayaan patuh tadbir urus bagi
-              kesejahteraan ahli.
-            </p>
-          </div>
+            </li>
+            <li class="vision__details--no">
+              <h3 class="vision__details--no--main">
+                <span>&#9654;</span>
+                <span>Objektif Utama</span>
+              </h3>
+              <ol class="vision__details--no--list">
+                <li class="vision__details--no--list--line">
+                  Memperkukuh pergerakan koperasi melalui penggubalan akta
+                  baharu.
+                </li>
+                <li class="vision__details--no--list--line">
+                  Meliberalisasikan peraturan serta memperkasa peranan SKM.
+                </li>
+                <li class="vision__details--no--list--line">
+                  Mewujudkan koperasi yang lebih responsif, dinamik dan berdaya
+                  saing.
+                </li>
+                <li class="vision__details--no--list--line">
+                  Memudahkan urusan perniagaan serta meningkatkan tadbir urus.
+                </li>
+              </ol>
+            </li>
+            <li class="vision__details--no">
+              <h3 class="vision__details--no--main">
+                <span>&#9654;</span>
+                <span>Modus Operandi</span>
+              </h3>
+              <h3 class="vision__details--no--desc">
+                Kontrak kerajaan - tender / runding &bull; Saham model (simpanan
+                persaraan bebas hutang)
+              </h3>
+            </li>
+          </ul>
         </div>
-        <div class="service__box--row">
-          <ion-icon
-            name="refresh-outline"
-            class="service__box--row--icon"
-          ></ion-icon>
-          <div class="service__box--row--txt">
-            <h3 class="service__box--row--txt--main">Penstrukturan Hutang</h3>
-            <p class="service__box--row--txt--desc">
-              Membantu menyusun semula komitmen hutang secara berperingkat dan
-              terkawal.
-            </p>
-          </div>
-        </div>
-        <div class="service__box--row">
-          <ion-icon
-            name="diamond-outline"
-            class="service__box--row--icon"
-          ></ion-icon>
-          <div class="service__box--row--txt">
-            <h3 class="service__box--row--txt--main">Simpanan Persaraan</h3>
-            <p class="service__box--row--txt--desc">
-              Membina simpanan jangka panjang yang terjamin untuk hari
-              persaraan.
-            </p>
-          </div>
-        </div>
-        <div class="service__box--row">
-          <ion-icon
-            name="shield-checkmark-outline"
-            class="service__box--row--icon"
-          ></ion-icon>
-          <div class="service__box--row--txt">
-            <h3 class="service__box--row--txt--main">Perlindungan Kewangan</h3>
-            <p class="service__box--row--txt--desc">
-              Melindungi ahli daripada tekanan kewangan dan risiko pinjaman
-              tidak sah.
-            </p>
-          </div>
-        </div>
-        <div class="service__box--row">
-          <ion-icon
-            name="cart-outline"
-            class="service__box--row--icon"
-          ></ion-icon>
-          <div class="service__box--row--txt">
-            <h3 class="service__box--row--txt--main">Pelaburan Koperasi</h3>
-            <p class="service__box--row--txt--desc">
-              Mengurus pelaburan berasaskan koperasi secara mampan dan beretika.
-            </p>
-          </div>
-        </div>
-        <div class="service__box--row">
-          <ion-icon
-            name="layers-outline"
-            class="service__box--row--icon"
-          ></ion-icon>
-          <div class="service__box--row--txt">
-            <h3 class="service__box--row--txt--main">Tadbir Urus</h3>
-            <p class="service__box--row--txt--desc">
-              Mengamalkan pengurusan telus dengan kawalan selia yang
-              berakauntabiliti.
-            </p>
-          </div>
-        </div>
-        <div class="service__box--row">
-          <ion-icon
-            name="globe-outline"
-            class="service__box--row--icon"
-          ></ion-icon>
-          <div class="service__box--row--txt">
-            <h3 class="service__box--row--txt--main">Kebajikan Ahli</h3>
-            <p class="service__box--row--txt--desc">
-              Memperkasa kesejahteraan sosial dan ekonomi ahli koperasi.
-            </p>
-          </div>
-        </div>
-        <div class="service__box--row">
-          <ion-icon
-            name="bulb-outline"
-            class="service__box--row--icon"
-          ></ion-icon>
-          <div class="service__box--row--txt">
-            <h3 class="service__box--row--txt--main">Literasi Kewangan</h3>
-            <p class="service__box--row--txt--desc">
-              Meningkatkan pengetahuan dan kesedaran kewangan.
-            </p>
-          </div>
+        <div class="vision__background">
+          <img
+            src="imgs/background/vision.jpeg"
+            alt="Team"
+            class="vision__background--img"
+          />
         </div>
       </div>
-    </div>
-    <div class="container section-hide gallery" id="gallery">
-      <h1 class="gallery__header">Galeri</h1>
+      <div class="container service" id="service">
+        <h1 class="service__header">Perkhidmatan Kami</h1>
+        <div class="service__box">
+          <div class="service__box--row">
+            <ion-icon
+              name="wallet-outline"
+              class="service__box--row--icon"
+            ></ion-icon>
+            <div class="service__box--row--txt">
+              <h3 class="service__box--row--txt--main">Pembiayaan</h3>
+              <p class="service__box--row--txt--desc">
+                Menyediakan kemudahan pembiayaan patuh tadbir urus bagi
+                kesejahteraan ahli.
+              </p>
+            </div>
+          </div>
+          <div class="service__box--row">
+            <ion-icon
+              name="refresh-outline"
+              class="service__box--row--icon"
+            ></ion-icon>
+            <div class="service__box--row--txt">
+              <h3 class="service__box--row--txt--main">Penstrukturan Hutang</h3>
+              <p class="service__box--row--txt--desc">
+                Membantu menyusun semula komitmen hutang secara berperingkat dan
+                terkawal.
+              </p>
+            </div>
+          </div>
+          <div class="service__box--row">
+            <ion-icon
+              name="diamond-outline"
+              class="service__box--row--icon"
+            ></ion-icon>
+            <div class="service__box--row--txt">
+              <h3 class="service__box--row--txt--main">Simpanan Persaraan</h3>
+              <p class="service__box--row--txt--desc">
+                Membina simpanan jangka panjang yang terjamin untuk hari
+                persaraan.
+              </p>
+            </div>
+          </div>
+          <div class="service__box--row">
+            <ion-icon
+              name="shield-checkmark-outline"
+              class="service__box--row--icon"
+            ></ion-icon>
+            <div class="service__box--row--txt">
+              <h3 class="service__box--row--txt--main">
+                Perlindungan Kewangan
+              </h3>
+              <p class="service__box--row--txt--desc">
+                Melindungi ahli daripada tekanan kewangan dan risiko pinjaman
+                tidak sah.
+              </p>
+            </div>
+          </div>
+          <div class="service__box--row">
+            <ion-icon
+              name="cart-outline"
+              class="service__box--row--icon"
+            ></ion-icon>
+            <div class="service__box--row--txt">
+              <h3 class="service__box--row--txt--main">Pelaburan Koperasi</h3>
+              <p class="service__box--row--txt--desc">
+                Mengurus pelaburan berasaskan koperasi secara mampan dan
+                beretika.
+              </p>
+            </div>
+          </div>
+          <div class="service__box--row">
+            <ion-icon
+              name="layers-outline"
+              class="service__box--row--icon"
+            ></ion-icon>
+            <div class="service__box--row--txt">
+              <h3 class="service__box--row--txt--main">Tadbir Urus</h3>
+              <p class="service__box--row--txt--desc">
+                Mengamalkan pengurusan telus dengan kawalan selia yang
+                berakauntabiliti.
+              </p>
+            </div>
+          </div>
+          <div class="service__box--row">
+            <ion-icon
+              name="globe-outline"
+              class="service__box--row--icon"
+            ></ion-icon>
+            <div class="service__box--row--txt">
+              <h3 class="service__box--row--txt--main">Kebajikan Ahli</h3>
+              <p class="service__box--row--txt--desc">
+                Memperkasa kesejahteraan sosial dan ekonomi ahli koperasi.
+              </p>
+            </div>
+          </div>
+          <div class="service__box--row">
+            <ion-icon
+              name="bulb-outline"
+              class="service__box--row--icon"
+            ></ion-icon>
+            <div class="service__box--row--txt">
+              <h3 class="service__box--row--txt--main">Literasi Kewangan</h3>
+              <p class="service__box--row--txt--desc">
+                Meningkatkan pengetahuan dan kesedaran kewangan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container section-hide gallery" id="gallery">
+        <h1 class="gallery__header">Galeri</h1>
 
-      <div class="gallery__box">
-        <button class="gallery__box--arr gallery__box--arr--left">
-          &lsaquo;
-        </button>
+        <div class="gallery__box">
+          <button class="gallery__box--arr gallery__box--arr--left">
+            &lsaquo;
+          </button>
 
-        <div class="gallery__box--fig">
-          <div class="gallery__box--fig--track">
-            <img src="imgs/gallery/pic-1.jpeg" class="gallery__box--fig--img" />
-            <img src="imgs/gallery/pic-2.jpeg" class="gallery__box--fig--img" />
-            <img src="imgs/gallery/pic-3.jpeg" class="gallery__box--fig--img" />
-            <img src="imgs/gallery/pic-4.jpeg" class="gallery__box--fig--img" />
-            <img src="imgs/gallery/pic-5.jpeg" class="gallery__box--fig--img" />
-            <img src="imgs/gallery/pic-6.jpeg" class="gallery__box--fig--img" />
-            <img src="imgs/gallery/pic-7.jpeg" class="gallery__box--fig--img" />
-            <img src="imgs/gallery/pic-8.jpeg" class="gallery__box--fig--img" />
-            <img src="imgs/gallery/pic-9.jpeg" class="gallery__box--fig--img" />
+          <div class="gallery__box--fig">
+            <div class="gallery__box--fig--track">
+              <img
+                src="imgs/gallery/pic-1.jpeg"
+                class="gallery__box--fig--img"
+              />
+              <img
+                src="imgs/gallery/pic-2.jpeg"
+                class="gallery__box--fig--img"
+              />
+              <img
+                src="imgs/gallery/pic-3.jpeg"
+                class="gallery__box--fig--img"
+              />
+              <img
+                src="imgs/gallery/pic-4.jpeg"
+                class="gallery__box--fig--img"
+              />
+              <img
+                src="imgs/gallery/pic-5.jpeg"
+                class="gallery__box--fig--img"
+              />
+              <img
+                src="imgs/gallery/pic-6.jpeg"
+                class="gallery__box--fig--img"
+              />
+              <img
+                src="imgs/gallery/pic-7.jpeg"
+                class="gallery__box--fig--img"
+              />
+              <img
+                src="imgs/gallery/pic-8.jpeg"
+                class="gallery__box--fig--img"
+              />
+              <img
+                src="imgs/gallery/pic-9.jpeg"
+                class="gallery__box--fig--img"
+              />
+            </div>
           </div>
+          <button class="gallery__box--arr gallery__box--arr--right">
+            &rsaquo;
+          </button>
         </div>
-        <button class="gallery__box--arr gallery__box--arr--right">
-          &rsaquo;
-        </button>
       </div>
-    </div>
-    <div class="container section-hide faqs" id="faqs">
-      <div class="faqs__title">
-        <h1 class="faqs__title--main">Mari Kita Bina Sesuatu Bersama</h1>
-        <p class="faqs__title--desc">
-          Sama ada anda sedang merancang pembangunan baharu atau projek
-          penyelenggaraan, pasukan kami bersedia untuk memberikan perkhidmatan
-          yang melangkaui jangkaan.
-        </p>
+      <div class="container section-hide faqs" id="faqs">
+        <div class="faqs__title">
+          <h1 class="faqs__title--main">Mari Kita Bina Sesuatu Bersama</h1>
+          <p class="faqs__title--desc">
+            Sama ada anda sedang merancang pembangunan baharu atau projek
+            penyelenggaraan, pasukan kami bersedia untuk memberikan perkhidmatan
+            yang melangkaui jangkaan.
+          </p>
+          <a
+            href="https://wa.me/60197112291"
+            target="_blank"
+            rel="noopener"
+            class="faqs__title--contact"
+          >
+            <span class="faqs__title--contact--txt">Hubungi Kami</span>
+            <span class="faqs__title--contact--txt"
+              ><ion-icon
+                name="logo-whatsapp"
+                class="faqs__title--contact--logo"
+              ></ion-icon
+            ></span>
+          </a>
+        </div>
+        <div class="faqs__accordion">
+          <ul class="faqs__accordion--list">
+            <li class="faqs__accordion--no faqs__accordion--no--hide">
+              <div class="faqs__accordion--no--row">
+                <h3 class="faqs__accordion--no--question">
+                  Apakah jenis projek yang kami kendalikan?
+                </h3>
+                <button class="faqs__accordion--no--btn">
+                  <ion-icon
+                    name="add-outline"
+                    class="faqs__accordion--no--btn--icon faqs__accordion--no--btn--icon--add"
+                  ></ion-icon>
+                  <ion-icon
+                    name="remove-outline"
+                    class="faqs__accordion--no--btn--icon faqs__accordion--no--btn--icon--hide faqs__accordion--no--btn--icon--remove"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div
+                class="faqs__accordion--no--row faqs__accordion--no--row--btm"
+              >
+                <p
+                  class="faqs__accordion--no--ans faqs__accordion--no--ans--hide"
+                >
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Perspiciatis nemo minus saepe libero, ipsa voluptatem totam
+                  reprehenderit repudiandae fuga laborum qui, quia, rem
+                  provident obcaecati fugiat deleniti modi nulla quos.
+                </p>
+              </div>
+            </li>
+            <li class="faqs__accordion--no faqs__accordion--no--hide">
+              <div class="faqs__accordion--no--row">
+                <h3 class="faqs__accordion--no--question">
+                  Adakah kami menyediakan khidmat rundingan projek serta
+                  anggaran kos?
+                </h3>
+                <button class="faqs__accordion--no--btn">
+                  <ion-icon
+                    name="add-outline"
+                    class="faqs__accordion--no--btn--icon faqs__accordion--no--btn--icon--add"
+                  ></ion-icon>
+                  <ion-icon
+                    name="remove-outline"
+                    class="faqs__accordion--no--btn--icon faqs__accordion--no--btn--icon--hide faqs__accordion--no--btn--icon--remove"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div
+                class="faqs__accordion--no--row faqs__accordion--no--row--btm"
+              >
+                <p
+                  class="faqs__accordion--no--ans faqs__accordion--no--ans--hide"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Blanditiis ducimus, tempore laborum id laboriosam molestias
+                  consectetur, voluptate saepe explicabo, velit debitis quod
+                  aspernatur quis! Laborum nostrum eius reiciendis eveniet amet?
+                </p>
+              </div>
+            </li>
+            <li class="faqs__accordion--no faqs__accordion--no--hide">
+              <div class="faqs__accordion--no--row">
+                <h3 class="faqs__accordion--no--question">
+                  Bagaimanakah cara untuk menghubungi kami?
+                </h3>
+                <button class="faqs__accordion--no--btn">
+                  <ion-icon
+                    name="add-outline"
+                    class="faqs__accordion--no--btn--icon faqs__accordion--no--btn--icon--add"
+                  ></ion-icon>
+                  <ion-icon
+                    name="remove-outline"
+                    class="faqs__accordion--no--btn--icon faqs__accordion--no--btn--icon--hide faqs__accordion--no--btn--icon--remove"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div
+                class="faqs__accordion--no--row faqs__accordion--no--row--btm"
+              >
+                <p
+                  class="faqs__accordion--no--ans faqs__accordion--no--ans--hide"
+                >
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptatum aliquid commodi laborum placeat laudantium quos
+                  molestiae nostrum deleniti iure illum! Nihil veritatis
+                  officiis repudiandae dolorum voluptatem blanditiis nesciunt
+                  ullam error.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container map" id="map">
+        <h1 class="map__header">Hubungi Kami</h1>
+        <iframe
+          src="https://embed.waze.com/iframe?zoom=16&lat=3.15824&lon=101.74377"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map__frame"
+        ></iframe>
+
         <a
-          href="https://wa.me/60197112291"
+          href="https://waze.com/ul?ll=3.15824,101.74377&navigate=yes"
           target="_blank"
-          rel="noopener"
-          class="faqs__title--contact"
+          rel="noopener noreferrer"
+          class="map__nav"
         >
-          <span class="faqs__title--contact--txt">Hubungi Kami</span>
-          <span class="faqs__title--contact--txt"
-            ><ion-icon
-              name="logo-whatsapp"
-              class="faqs__title--contact--logo"
-            ></ion-icon
-          ></span>
+          &nbsp;
         </a>
       </div>
-      <div class="faqs__accordion">
-        <ul class="faqs__accordion--list">
-          <li class="faqs__accordion--no faqs__accordion--no--hide">
-            <div class="faqs__accordion--no--row">
-              <h3 class="faqs__accordion--no--question">
-                Apakah jenis projek yang kami kendalikan?
-              </h3>
-              <button class="faqs__accordion--no--btn">
-                <ion-icon
-                  name="add-outline"
-                  class="faqs__accordion--no--btn--icon faqs__accordion--no--btn--icon--add"
-                ></ion-icon>
-                <ion-icon
-                  name="remove-outline"
-                  class="faqs__accordion--no--btn--icon faqs__accordion--no--btn--icon--hide faqs__accordion--no--btn--icon--remove"
-                ></ion-icon>
-              </button>
-            </div>
-            <div class="faqs__accordion--no--row faqs__accordion--no--row--btm">
-              <p
-                class="faqs__accordion--no--ans faqs__accordion--no--ans--hide"
-              >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Perspiciatis nemo minus saepe libero, ipsa voluptatem totam
-                reprehenderit repudiandae fuga laborum qui, quia, rem provident
-                obcaecati fugiat deleniti modi nulla quos.
-              </p>
-            </div>
+      <div class="footer" id="footer">
+        <ul class="footer__list">
+          <li class="footer__list--detail">
+            <h3 class="footer__list--detail--header">
+              <span class="footer__list--detail--header--txt">Alamat</span>
+              <ion-icon
+                name="location-outline"
+                class="footer__list--detail--header--icon"
+              ></ion-icon>
+            </h3>
+            <p class="footer__list--detail--answer">
+              Dewan Diplomat KSGEC, 15 Jalan Mengkuang Desa Pahlawan, 55000
+              Kuala Lumpur, Malaysia.
+            </p>
           </li>
-          <li class="faqs__accordion--no faqs__accordion--no--hide">
-            <div class="faqs__accordion--no--row">
-              <h3 class="faqs__accordion--no--question">
-                Adakah kami menyediakan khidmat rundingan projek serta anggaran
-                kos?
-              </h3>
-              <button class="faqs__accordion--no--btn">
-                <ion-icon
-                  name="add-outline"
-                  class="faqs__accordion--no--btn--icon faqs__accordion--no--btn--icon--add"
-                ></ion-icon>
-                <ion-icon
-                  name="remove-outline"
-                  class="faqs__accordion--no--btn--icon faqs__accordion--no--btn--icon--hide faqs__accordion--no--btn--icon--remove"
-                ></ion-icon>
-              </button>
-            </div>
-            <div class="faqs__accordion--no--row faqs__accordion--no--row--btm">
-              <p
-                class="faqs__accordion--no--ans faqs__accordion--no--ans--hide"
-              >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis ducimus, tempore laborum id laboriosam molestias
-                consectetur, voluptate saepe explicabo, velit debitis quod
-                aspernatur quis! Laborum nostrum eius reiciendis eveniet amet?
-              </p>
-            </div>
+          <li class="footer__list--detail">
+            <h3 class="footer__list--detail--header">
+              <span class="footer__list--detail--header--txt">Emel</span>
+              <ion-icon
+                name="mail-outline"
+                class="footer__list--detail--header--icon"
+              ></ion-icon>
+            </h3>
+            <p class="footer__list--detail--answer">
+              <span>
+                <a
+                  href="mailto:finance@ksgecoop.com"
+                  class="footer__list--detail--answer--link"
+                  >finance@ksgecoop.com</a
+                >
+              </span>
+              <span>
+                <a
+                  href="mailto:admin@ksgecoop.com"
+                  class="footer__list--detail--answer--link"
+                  >admin@ksgecoop.com</a
+                >
+              </span>
+            </p>
           </li>
-          <li class="faqs__accordion--no faqs__accordion--no--hide">
-            <div class="faqs__accordion--no--row">
-              <h3 class="faqs__accordion--no--question">
-                Bagaimanakah cara untuk menghubungi kami?
-              </h3>
-              <button class="faqs__accordion--no--btn">
-                <ion-icon
-                  name="add-outline"
-                  class="faqs__accordion--no--btn--icon faqs__accordion--no--btn--icon--add"
-                ></ion-icon>
-                <ion-icon
-                  name="remove-outline"
-                  class="faqs__accordion--no--btn--icon faqs__accordion--no--btn--icon--hide faqs__accordion--no--btn--icon--remove"
-                ></ion-icon>
-              </button>
-            </div>
-            <div class="faqs__accordion--no--row faqs__accordion--no--row--btm">
-              <p
-                class="faqs__accordion--no--ans faqs__accordion--no--ans--hide"
+          <li class="footer__list--detail">
+            <h3 class="footer__list--detail--header">
+              <span class="footer__list--detail--header--txt">Talian</span>
+              <ion-icon
+                name="call-outline"
+                class="footer__list--detail--header--icon"
+              ></ion-icon>
+            </h3>
+            <p class="footer__list--detail--answer">
+              <a
+                href="https://wa.me/60197112291"
+                target="_blank"
+                rel="noopener"
+                class="footer__list--detail--answer--link"
               >
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptatum aliquid commodi laborum placeat laudantium quos
-                molestiae nostrum deleniti iure illum! Nihil veritatis officiis
-                repudiandae dolorum voluptatem blanditiis nesciunt ullam error.
-              </p>
-            </div>
+                +60 19 - 711 2291
+              </a>
+            </p>
           </li>
-        </ul>
-      </div>
-    </div>
-    <div class="container map" id="map">
-      <h1 class="map__header">Hubungi Kami</h1>
-      <iframe
-        src="https://embed.waze.com/iframe?zoom=16&lat=3.1579&lon=101.7120"
-        allowfullscreen
-        referrerpolicy="no-referrer-when-downgrade"
-        class="map__frame"
-      ></iframe>
-
-      <a
-        href="https://waze.com/ul?ll=3.1579,101.7120&navigate=yes"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="map__nav"
-      >
-        &nbsp;
-      </a>
-    </div>
-    <div class="footer" id="footer">
-      <ul class="footer__list">
-        <li class="footer__list--detail">
-          <h3 class="footer__list--detail--header">
-            <span class="footer__list--detail--header--txt">Address</span>
-            <ion-icon
-              name="location-outline"
-              class="footer__list--detail--header--icon"
-            ></ion-icon>
-          </h3>
-          <p class="footer__list--detail--answer">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          </p>
-        </li>
-        <li class="footer__list--detail">
-          <h3 class="footer__list--detail--header">
-            <span class="footer__list--detail--header--txt">Email</span>
-            <ion-icon
-              name="mail-outline"
-              class="footer__list--detail--header--icon"
-            ></ion-icon>
-          </h3>
-          <p class="footer__list--detail--answer">test2test@gmail.com</p>
-        </li>
-        <li class="footer__list--detail">
+          <!-- <li class="footer__list--detail">
           <h3 class="footer__list--detail--header">
             <span class="footer__list--detail--header--txt">Others</span>
           </h3>
@@ -489,22 +597,24 @@
               ></ion-icon
             ></a>
           </div>
-        </li>
-      </ul>
-    </div>
-    <div class="whatsapp" id="whatsapp">
-      <!-- <a href="#" class="whatsapp__btn"
+        </li> -->
+        </ul>
+      </div>
+      <div class="whatsapp" id="whatsapp">
+        <!-- <a href="#" class="whatsapp__btn"
         ><ion-icon name="logo-whatsapp" class="whatsapp__btn--icon"></ion-icon>
       </a> -->
-      <a
-        href="https://wa.me/60197112291"
-        class="whatsapp__btn"
-        target="_blank"
-        rel="noopener"
-      >
-        <ion-icon name="logo-whatsapp" class="whatsapp__btn--icon"></ion-icon>
-      </a>
-    </div>
+        <a
+          href="https://wa.me/60197112291"
+          class="whatsapp__btn"
+          target="_blank"
+          rel="noopener"
+        >
+          <ion-icon name="logo-whatsapp" class="whatsapp__btn--icon"></ion-icon>
+        </a>
+      </div>
+    </main>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

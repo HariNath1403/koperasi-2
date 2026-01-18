@@ -35,6 +35,10 @@
   background-color: $color-text;
   color: $color-background;
 
+  @include respond(phone) {
+    padding: $space-2xl $space-xl;
+  }
+
   &__list {
     @include flex-row;
     gap: $space-2xl;

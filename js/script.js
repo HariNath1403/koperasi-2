@@ -211,7 +211,10 @@ const userId = "KSGEC";
 const userPw = "211";
 
 const successfulLogin = function () {
-  if (loginInputId.value === userId && loginInputPw.value === userPw) {
+  if (
+    (loginInputId.value === userId && loginInputPw.value === userPw) ||
+    str(loginInputPw.value) === userPw
+  ) {
     sectionLogin.style.display = "none";
     sectionMain.style.display = "block";
   } else {

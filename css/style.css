@@ -774,6 +774,9 @@ body {
   padding: 4rem 5.6rem;
   background-color: #2c3532;
   color: #f2e7dc; }
+  @media (max-width: 37.5em) {
+    .footer {
+      padding: 4rem 3.2rem; } }
   .footer__list {
     display: flex;
     flex-direction: row;
